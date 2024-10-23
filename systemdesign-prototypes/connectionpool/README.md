@@ -1,0 +1,3 @@
+This is an example of using multi threading when using 300 threads we are trying to connect to a postgres database and running some query and closing the connection. When doing concurrent connections, it will create error Too Many Connections. To avoid this we are using Blocking Queue in Java to maintain 10 connections and using them to run all 300 threads. The other threads will wait until a connection object is available. 
+
+Created a localdb database in postgres and username is anujsharma and password is anujsharma
